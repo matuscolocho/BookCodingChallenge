@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="bookId" id="gTV-IL-0wX" customClass="BookViewCell" customModule="EBooks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2j-dE-hZD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="211"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF5-3v-0VO" customClass="CardView" customModule="EBooks" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="304" height="195"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJj-SN-yll">
+                                        <rect key="frame" x="8" y="57.5" width="60" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="ptn-I1-bcS"/>
+                                            <constraint firstAttribute="width" constant="60" id="zTs-oT-YPA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-Yb-AgJ">
+                                        <rect key="frame" x="88" y="77.5" width="196" height="20"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ2-ha-FhT">
+                                        <rect key="frame" x="88" y="105" width="196" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fJj-SN-yll" firstAttribute="leading" secondItem="GF5-3v-0VO" secondAttribute="leading" constant="8" id="0v7-3Q-w9Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="A8a-Yb-AgJ" secondAttribute="trailing" constant="20" id="1bV-UA-v4k"/>
+                                    <constraint firstItem="A8a-Yb-AgJ" firstAttribute="leading" secondItem="fJj-SN-yll" secondAttribute="trailing" constant="20" id="E3t-j9-v3T"/>
+                                    <constraint firstItem="A8a-Yb-AgJ" firstAttribute="centerY" secondItem="fJj-SN-yll" secondAttribute="centerY" constant="-10" id="Kbb-YY-kYW"/>
+                                    <constraint firstAttribute="trailing" secondItem="vJ2-ha-FhT" secondAttribute="trailing" constant="20" id="M9L-rg-SPQ"/>
+                                    <constraint firstItem="fJj-SN-yll" firstAttribute="centerY" secondItem="GF5-3v-0VO" secondAttribute="centerY" id="NEI-Ir-naJ"/>
+                                    <constraint firstItem="vJ2-ha-FhT" firstAttribute="top" secondItem="A8a-Yb-AgJ" secondAttribute="bottom" constant="7.5" id="h1o-xJ-U9v"/>
+                                    <constraint firstItem="vJ2-ha-FhT" firstAttribute="leading" secondItem="fJj-SN-yll" secondAttribute="trailing" constant="20" id="jMO-dw-ILx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GF5-3v-0VO" firstAttribute="leading" secondItem="F2j-dE-hZD" secondAttribute="leading" constant="8" id="EWE-YP-hE4"/>
+                            <constraint firstAttribute="trailing" secondItem="GF5-3v-0VO" secondAttribute="trailing" constant="8" id="q9L-Ut-MQD"/>
+                            <constraint firstAttribute="bottom" secondItem="GF5-3v-0VO" secondAttribute="bottom" constant="8" id="sCG-CH-el3"/>
+                            <constraint firstItem="GF5-3v-0VO" firstAttribute="top" secondItem="F2j-dE-hZD" secondAttribute="top" constant="8" id="t6t-VK-0on"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="F2j-dE-hZD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hTF-X3-bPg"/>
+                <constraint firstItem="F2j-dE-hZD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="if7-O6-Ndq"/>
+                <constraint firstAttribute="bottom" secondItem="F2j-dE-hZD" secondAttribute="bottom" id="ppE-P7-iDu"/>
+                <constraint firstAttribute="trailing" secondItem="F2j-dE-hZD" secondAttribute="trailing" id="sab-gF-EWf"/>
+            </constraints>
+            <size key="customSize" width="320" height="211"/>
+            <connections>
+                <outlet property="bookAuthor" destination="vJ2-ha-FhT" id="I3y-6Y-qjS"/>
+                <outlet property="bookCoverIV" destination="fJj-SN-yll" id="nmD-LW-jkf"/>
+                <outlet property="bookTitle" destination="A8a-Yb-AgJ" id="1rA-bW-T8p"/>
+            </connections>
+            <point key="canvasLocation" x="333.33333333333337" y="206.58482142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
