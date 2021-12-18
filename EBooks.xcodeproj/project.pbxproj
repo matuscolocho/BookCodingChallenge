@@ -78,13 +78,12 @@
 		849E7ABF276D7A63003B4D26 /* EBooks */ = {
 			isa = PBXGroup;
 			children = (
+				849E7AEE276D9A45003B4D26 /* ViewControllers */,
 				849E7ADC276D81CD003B4D26 /* Views */,
 				849E7AD7276D7C2D003B4D26 /* Networking */,
 				849E7AD4276D7B99003B4D26 /* Models */,
 				849E7AC0276D7A63003B4D26 /* AppDelegate.swift */,
 				849E7AC2276D7A64003B4D26 /* SceneDelegate.swift */,
-				849E7AC4276D7A64003B4D26 /* BooksViewController.swift */,
-				849E7AE7276D8AB8003B4D26 /* BookDetailViewController.swift */,
 				849E7AC6276D7A64003B4D26 /* Main.storyboard */,
 				849E7AC9276D7A67003B4D26 /* Assets.xcassets */,
 				849E7ACB276D7A67003B4D26 /* LaunchScreen.storyboard */,
@@ -130,6 +129,15 @@
 				849E7AE5276D868F003B4D26 /* UIViewImage+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		849E7AEE276D9A45003B4D26 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				849E7AC4276D7A64003B4D26 /* BooksViewController.swift */,
+				849E7AE7276D8AB8003B4D26 /* BookDetailViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

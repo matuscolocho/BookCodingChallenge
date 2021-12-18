@@ -20,19 +20,13 @@ class HttpHelper:NSObject{
     
     
     class func fetchBooks(completion: @escaping (_ books:[Book]) -> ()){
-        
-        
-      
-        
+ 
         let urlRequest = "\(urlForEnvironmnet())/\(boosksApi.books)"
         
         let task = URLSession.shared.dataTask(with: URLRequest(url: URL(string: urlRequest)!),
                                               completionHandler: { data, response, error in
-            
             guard error == nil else {return}
             guard let data = data else { return }
-        
-            
             do {
                 let results = try JSONDecoder().decode([Book].self, from: data)
                 
